@@ -8,4 +8,4 @@ aux_source_directory(. DIR_SRCS)
 
 # 指定生成目标
 add_executable(c_mysql_conn c_mysql_conn.cpp)
-target_link_libraries (c_mysql_conn  ${EXTRA_LIBS})
+target_link_libraries (c_mysql_conn  mysqlclient)
