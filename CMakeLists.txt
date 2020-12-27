@@ -12,3 +12,7 @@ target_link_libraries (c_mysql_conn  mysqlclient)
 
 add_executable(cpp_mysql_conn cpp_mysql_conn.cpp)
 target_link_libraries (cpp_mysql_conn  mysqlcppconn)
+
+add_executable(cpp_sqlite_conn cpp_sqlite_conn.cpp)
+target_link_libraries (cpp_sqlite_conn  sqlite3)
+
