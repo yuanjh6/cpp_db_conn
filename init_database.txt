@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS test
+DEFAULT CHARACTER SET utf8
+DEFAULT COLLATE utf8_general_ci;
+
+use test;
+
+DROP TABLE IF EXISTS `dept`;
+
+CREATE TABLE `dept` (
+  `deptno` tinyint(2) NOT NULL,
+  `dname` varchar(14) DEFAULT NULL,
+  `loc` varchar(13) DEFAULT NULL,
+  PRIMARY KEY (`deptno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `dept` VALUES (10,'部门ACCOUNTING','NEW YORK'),(20,'部门RESEARCH','DALLAS'),(30,'部门SALES','CHICAGO'),(40,'部门OPERATIONS','BOSTON ');
