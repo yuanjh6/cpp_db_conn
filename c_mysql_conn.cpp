@@ -15,7 +15,7 @@ int main()
     MYSQL_ROW result_row;
     int res,i,j,row,column;
     mysql_init(&conn);
-    if(mysql_real_connect(&conn,"localhost","root","password","hello8861!A",0,NULL,CLIENT_FOUND_ROWS)) //"root":数据库管理员 "":root密码 "test":数据库的名字
+    if(mysql_real_connect(&conn,"localhost","root","hello8861!A","test",0,NULL,CLIENT_FOUND_ROWS)) //"root":数据库管理员 "":root密码 "test":数据库的名字
     {
         printf("connect success!\n");
         char sqlstr[300];
