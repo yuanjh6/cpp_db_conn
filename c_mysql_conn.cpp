@@ -68,6 +68,8 @@ int main()
             printf("delete OK\n");
         }
 
+    }else{
+        printf("connection error\n");
     }
     mysql_close(&conn);
     //内存资源回收
